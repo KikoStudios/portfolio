@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 dark:text-white;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF3366] to-[#FF6B4E];
+  }
+  
+  .nav-link {
+    @apply px-4 py-2 rounded-lg transition-all hover:bg-gray-100 dark:hover:bg-white/10;
+  }
+
+  .card {
+    @apply bg-white dark:bg-[#1A1A1A] rounded-2xl p-6 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-[#FF3366]/10;
+  }
+}
